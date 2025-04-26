@@ -1,0 +1,5 @@
+rasa
+deep-translator
+flask
+flask-cors
+sqlalchemy<2.0
