@@ -22,7 +22,7 @@ Svaran is a smart chatbot designed to assist IIT Jammu students, faculty, and vi
 ## Installation
 ### Prerequisites
 - Node.js and npm installed.
-- Python 3.10.
+- Python 3.10 .
 - Virtual environment setup (optional but recommended).
 
 ### Steps
@@ -34,8 +34,7 @@ Svaran is a smart chatbot designed to assist IIT Jammu students, faculty, and vi
 
 2. Set up the backend:
    ```bash
-   cd backend
-   python3 -m venv myvenv
+   python3.10 -m venv myvenv
    source myvenv/bin/activate  # On Windows: myvenv\Scripts\activate
    pip install -r requirements.txt
    ```
@@ -50,11 +49,17 @@ Svaran is a smart chatbot designed to assist IIT Jammu students, faculty, and vi
 4. Run the backend server:
    ```bash
    cd ../backend
-   rasa run --enable-api
+   python app.py
    ```
 
-5. Access the application:
-   Open your browser and navigate to `http://localhost:3000`.
+5. Run the Rasa Server in new terminal:
+   ```bash
+   cd backend
+   rasa shell
+   ```
+
+6. Access the application:
+   Open your browser and navigate to `http://localhost:5173`.
 
 ## Contributing
 We welcome contributions! Please follow these steps:
@@ -62,9 +67,3 @@ We welcome contributions! Please follow these steps:
 2. Create a new branch for your feature or bug fix.
 3. Commit your changes and push to your fork.
 4. Submit a pull request with a detailed description of your changes.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contact
-For suggestions or feedback, reach out to us at [chatbot-support@iitjammu.ac.in](mailto:chatbot-support@iitjammu.ac.in).
